@@ -10,22 +10,22 @@
 </head>
 
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+    <div class="navbar navbar-inverse navbar-fixed-top" style="background-color:#00ff00">
+        <div class="container" style="background:inherit">
+            <div class="navbar-header" style="background:inherit">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style="background:inherit">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand" ; align-content:center; text-align:center"><img src="~/images/logo.png" style="margin:auto" /></a>
+                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand" ; style="background:inherit; height:60px"><img src="~/images/logo.png" style="margin:auto" /></a>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
+            <div class="navbar-collapse collapse" style="background:inherit">
+                <ul class="nav navbar-nav" style="background:inherit">
+                    <li><a asp-area="" asp-controller="Home" asp-action="Index" style="color:black; margin-top:5px; font-size:medium"><b>Home</b></a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="About" style="color:black; margin-top:5px; font-size:medium"><b>About</b></a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Contact" style="color:black; margin-top:5px; font-size:medium"><b>Contact</b></a></li>
                 </ul>
                 @await Html.PartialAsync("_LoginPartial")
             </div>
@@ -35,12 +35,19 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; 2016 - Rage du Code</p>
+            <div class="navbar-collapse collapse" style="background:inherit">
+                <ul class="nav navbar-nav">
+                    <li><p style="margin-top:15px"><b>&copy; 2016 - Les Bidouilleurs  Sataniques</b> </p></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Index" style="color:black; font-size:small">Home</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="About" style="color:black; font-size:small">About</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Contact" style="color:black; font-size:small">Contact</a></li>
+                </ul>
+            </div>
         </footer>
     </div>
-        <script src="~/lib/jquery/dist/jquery.js"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
-        <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
 
     @RenderSection("scripts", required: false)
 </body>
