@@ -9,18 +9,19 @@
     <form asp-area="" asp-controller="Account" asp-action="LogOff" method="post" id="logoutForm" class="navbar-right">
         <ul class="nav navbar-nav navbar-right">
             <li>
-                <a asp-area="" asp-controller="Manage" asp-action="Index" title="Manage">Hello @UserManager.GetUserName(User)!</a>
+                <a asp-area="" asp-controller="Manage" asp-action="Index" title="Manage">Bonjour @UserManager.GetUserName(User)</a>
             </li>
             <li>
-                <button type="submit" class="btn btn-link navbar-btn navbar-link">Log off</button>
+                <button type="submit" class="btn btn-link navbar-btn navbar-link">Se déconnecter</button>
             </li>
         </ul>
     </form>
 }
 else
 {
+    <link rel="stylesheet" href="~/css/site.css" />
     <ul class="nav navbar-nav navbar-right">
-        <li><a asp-area="" asp-controller="Account" asp-action="Register">Register</a></li>
-        <li><a asp-area="" asp-controller="Account" asp-action="Login">Log in</a></li>
+        <li><a asp-area="" asp-controller="Account" asp-action="Register" style="color:black; margin-top:5px; font-size:medium"><b>S'enregistrer</b></a></li>
+        <li><a asp-area="" asp-controller="Account" asp-action="Login" style="color:black; margin-top:5px; font-size:medium"><b>Se connecter</b></a></li>
     </ul>
 }
