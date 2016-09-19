@@ -7,10 +7,21 @@
     <title>@ViewData["Title"] - Rage du Code</title>
     <link rel="stylesheet" href="~/css/site.css" />
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+
+    <style>
+        @@font-face {
+            font-family: 'thunder_strikeregular';
+            src: url('thunder_strike-webfont.eot');
+            src: url('thunder_strike-webfont.eot?#iefix') format('embedded-opentype'), url('thunder_strike-webfont.woff2') format('woff2'), url('thunder_strike-webfont.woff') format('woff'), url('thunder_strike-webfont.ttf') format('truetype'), url('thunder_strike-webfont.svg#thunder_strikeregular') format('svg');
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+
 </head>
 
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top" style="background-color:#00ff00">
+    <div class="navbar navbar-inverse navbar-fixed-top" style="background-color:#969696">
         <div class="container" style="background:inherit">
             <div class="navbar-header" style="background:inherit">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style="background:inherit">
@@ -23,7 +34,7 @@
             </div>
             <div class="navbar-collapse collapse" style="background:inherit">
                 <ul class="nav navbar-nav" style="background:inherit">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index" style="color:black; margin-top:5px; font-size:medium"><b>Home</b></a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Index" style="color:black; margin-top:5px; font-size:medium;"><b>Home</b></a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="About" style="color:black; margin-top:5px; font-size:medium"><b>About</b></a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="Contact" style="color:black; margin-top:5px; font-size:medium"><b>Contact</b></a></li>
                 </ul>
