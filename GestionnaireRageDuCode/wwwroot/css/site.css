@@ -9,7 +9,12 @@
 body {
     padding-top: 50px;
     padding-bottom: 20px;
+<<<<<<< HEAD
     background-image: url(images/Fond.png);
+=======
+    background-image:url(/images/Fond.png);
+    background-size:cover;
+>>>>>>> 24d01e2f5ef6a8402bd9bb5276ecccb0d6c9b8c6
     font-family: 'source_code_proregular';
 }
 
@@ -19,6 +24,13 @@ body {
 
 #nav {
     background-color: #969696;
+<<<<<<< HEAD
+=======
+}
+
+#body-content{
+    background-color:#ffffff
+>>>>>>> 24d01e2f5ef6a8402bd9bb5276ecccb0d6c9b8c6
 }
 
 /* Wrapping element */
