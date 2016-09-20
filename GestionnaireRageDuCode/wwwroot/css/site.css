@@ -15,8 +15,26 @@ body {
     font-family: 'source_code_proregular';
 }
 
+#navLogo{
+    height:60px;
+}
+
+#title{
+    text-align:center;
+}
+
+#navnav{
+    color:black;
+    margin-top:5px;
+    font-size:medium;
+}
+
 .li_About {
     height: 40px;
+}
+
+#aboutP{
+    font-size: 20px;
 }
 
 #nav {
@@ -25,6 +43,15 @@ body {
 
 #body-content {
     background-color: #ffffff;
+}
+
+#footnavCR{
+    margin-top:15px;
+}
+
+#footli{
+    color:black;
+    font-size:small;
 }
 
 /* Wrapping element */

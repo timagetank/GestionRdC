@@ -15,19 +15,19 @@
     <div class="navbar navbar-inverse navbar-fixed-top" id="nav">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style="background:inherit">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand" ; style="background:inherit; height:60px"><img src="~/images/logo.png" style="margin:auto" /></a>
+                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand" id="navLogo"><img src="~/images/logo.png" style="margin:auto" /></a>
             </div>
-            <div class="navbar-collapse collapse" style="background:inherit">
-                <ul class="nav navbar-nav" style="background:inherit">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index" style="color:black; margin-top:5px; font-size:medium;"><b>Home</b></a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About" style="color:black; margin-top:5px; font-size:medium"><b>About</b></a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact" style="color:black; margin-top:5px; font-size:medium"><b>Contact</b></a></li>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a asp-area="" asp-controller="Home" asp-action="Index" id="navnav"><b>Accueil</b></a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="About" id="navnav"><b>À propos</b></a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Contact" id="navnav"><b>Contact</b></a></li>
                 </ul>
                 @await Html.PartialAsync("_LoginPartial")
             </div>
@@ -37,12 +37,12 @@
         @RenderBody()
         <hr />
         <footer>
-            <div class="navbar-collapse collapse" style="background:inherit">
+            <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><p style="margin-top:15px"><b>&copy; 2016 - Les Bidouilleurs  SATANIQUES</b> </p></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index" style="color:black; font-size:small">Home</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About" style="color:black; font-size:small">About</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact" style="color:black; font-size:small">Contact</a></li>
+                    <li id="footnavCR"><p><b>&copy; 2016 - Les Bidouilleurs  SATANIQUES</b> </p></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Index" id="footli">Accueil</a></li>
+                    <li id="footli"><a asp-area="" asp-controller="Home" asp-action="About" id="footli">À propos</a></li>
+                    <li id="footli"><a asp-area="" asp-controller="Home" asp-action="Contact" id="footli">Contact</a></li>
                 </ul>
             </div>
         </footer>
