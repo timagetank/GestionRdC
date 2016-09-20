@@ -1,7 +1,27 @@
-﻿body {
+﻿@font-face {
+        font-family: 'source_code_proregular';
+        src: url(/fonts/SourceCode/sourcecodepro-regular-webfont.ttf);
+        src: url(/fonts/sourcecodepro-regular-webfont.eot?#iefix) format('embedded-opentype'), url(/fonts/SourceCode/sourcecodepro-regular-webfont.woff2) format('woff2'), url(/fonts/SourceCode/sourcecodepro-regular-webfont.woff) format('woff'), url(/fonts/SourceCode/sourcecodepro-regular-webfont.ttf) format('truetype'), url(/fonts/SourceCode/sourcecodepro-regular-webfont.svg) format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+body {
     padding-top: 50px;
     padding-bottom: 20px;
+<<<<<<< HEAD
     background-image: url(images/Fond.png);
+=======
+    font-family: 'source_code_proregular';
+}
+
+.li_About {
+    height: 40px;
+}
+
+#nav {
+    background-color: #969696;
+>>>>>>> bf88211b55d12b8f1ded3b53a1dbeb239897e6df
 }
 
 /* Wrapping element */
@@ -47,10 +67,5 @@ textarea {
     /* Hide captions */
     .carousel-caption {
         display: none;
-    }
-
-    #left-index{
-        border: solid 1px black;
-        
     }
 }
