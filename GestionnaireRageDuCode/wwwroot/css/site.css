@@ -34,8 +34,26 @@ body {
     font-size: 20px;
 }
 
+.team_img{
+    width:100%;
+}
+
+._img
+{
+    width:100%;
+}
+
+.lbl_equipe{
+    font-size:20px;
+}
+
 #aboutP{
     font-size: 20px;
+}
+
+#index{
+    font-size: 20px;
+    
 }
 
 #nav {

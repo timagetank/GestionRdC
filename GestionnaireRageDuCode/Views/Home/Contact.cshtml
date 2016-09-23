@@ -1,5 +1,6 @@
 ﻿@{
     ViewData["Title"] = "Pour nous contacter:";
+    string[] role = { "Administrateur", "Modérateur", "Membre", "Invité d'honneur" };
 }
 
 <br />
@@ -13,7 +14,22 @@
     Darvaza, Turkménistan<br />
     <p>Téléphone: (974) 666-1837</p>
 </address>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3048.848358203101!2d58.40866491490756!3d40.16792987939473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f62cc662c08364d%3A0xafa46f2814ef23d2!2sDarvaza+Gas+Crater!5e0!3m2!1sfr!2sfr!4v1473789956001" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+<div class="col-md-8">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3048.848358203101!2d58.40866491490756!3d40.16792987939473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f62cc662c08364d%3A0xafa46f2814ef23d2!2sDarvaza+Gas+Crater!5e0!3m2!1sfr!2sfr!4v1473789956001" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+
+<div class="col-md-4">
+    <h2>Notre équipe:</h2>
+    <label class="lbl_equipe">Alexandre Constant; @role[0]</label>
+    <div>
+        <img class="team_img" src="/images/ac.jpg" />
+    </div>
+    <label class="lbl_equipe">Timothé Provost; @role[0]</label>
+    <div>
+        <img class="team_img" src="/images/tp.jpg" />
+    </div>
+</div>
 
 <address>
     <strong>Support: </strong><a href="mailto:info@bidouilleurssataniques.ca">info@bidouilleurssataniques.ca</a><br />

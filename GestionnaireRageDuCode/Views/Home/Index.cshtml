@@ -1,8 +1,64 @@
-﻿@{
-    ViewData["Title"] = "Bienvenue!";
+﻿@using System.Collections.Generic
+@using Microsoft.AspNetCore.Http
+@using Microsoft.AspNetCore.Http.Authentication
+@model LoginViewModel
+@inject SignInManager<ApplicationUser> SignInManager
+
+@{
+    ViewData["Title"] = "Rage du code";
 }
 
-<br />
-
-<h2>@ViewData["Title"]</h2>
-
+<h2><i>@ViewData["Title"]</i></h2>
+<p id="aboutP">
+    Bienvenue dans ce monde où l'aide aux développeurs se fait des plus complètes. Chez nous, vous trouverez
+    une multitude de moyens pour perfectionner le développement de vos applications ainsi que toute l'aide 
+    nécessaire pour corriger presque n'importe quel problème que vous pourriez rencontrer. Notre équipe ainsi
+    que les autres membres sont ici par vous, pour vous. N'hésitez pas à utiliser la messagerie instantanée 
+    (présentement en développement) pour obtenir une assistance rapide et adaptée à vos besoins.
+</p>
+<div class="row">
+    <div class="col-md-8">
+        <section>
+            <form asp-controller="Account" asp-action="Login" asp-route-returnurl="@ViewData["ReturnUrl"]" method="post" class="form-horizontal">
+                <h4>Connexion avec un compte local...</h4>
+                <hr />
+                <div asp-validation-summary="All" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Email" class="col-md-2 control-label">Courriel</label>
+                    <div class="col-md-10">
+                        <input asp-for="Email" class="form-control" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Password" class="col-md-2 control-label">Mot de passe</label>
+                    <div class="col-md-10">
+                        <input asp-for="Password" class="form-control" />
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <div class="checkbox">
+                            <label asp-for="RememberMe">
+                                <input asp-for="RememberMe" />
+                                Se souvenir de moi
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <button type="submit" class="btn btn-default">Connexion</button>
+                    </div>
+                </div>
+                <p>
+                    <a asp-action="Register" asp-route-returnurl="@ViewData["ReturnUrl"]">Enregistrer un nouvel utilisateur</a>
+                </p>
+                <p>
+                    <a asp-action="ForgotPassword">Oublié votre mot de passe?</a>
+                </p>
+            </form>
+        </section>
+    </div>
+</div>
