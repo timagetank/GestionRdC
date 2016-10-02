@@ -27,6 +27,20 @@ namespace GestionnaireRageDuCode.Controllers
             return View();
         }
 
+        public IActionResult Forum()
+        {
+            ViewData["Message"] = "Your forums.";
+
+            return View();
+        }
+
+        public IActionResult Membres()
+        {
+            ViewData["Message"] = "Your members.";
+
+            return View();
+        }
+
         public IActionResult Error()
         {
             return View();

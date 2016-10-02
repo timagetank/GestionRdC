@@ -28,7 +28,7 @@
                     <li><a asp-area="" asp-controller="Home" asp-action="Index" id="navnav"><b>Accueil</b></a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="About" id="navnav"><b>À propos</b></a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="Contact" id="navnav"><b>Contact</b></a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Forums" id="navnav"><b>Forums</b></a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Forum" id="navnav"><b>Forums</b></a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="Membres" id="navnav"><b>Membres</b></a></li>
                 </ul>
                 @await Html.PartialAsync("_LoginPartial")
@@ -45,6 +45,8 @@
                     <li><a asp-area="" asp-controller="Home" asp-action="Index" id="footli">Accueil</a></li>
                     <li id="footli"><a asp-area="" asp-controller="Home" asp-action="About" id="footli">À propos</a></li>
                     <li id="footli"><a asp-area="" asp-controller="Home" asp-action="Contact" id="footli">Contact</a></li>
+                    <li id="footli"><a asp-area="" asp-controller="Home" asp-action="Forums" id="navnav"><b>Forums</b></a></li>
+                    <li id="footli"><a asp-area="" asp-controller="Home" asp-action="Membres" id="navnav"><b>Membres</b></a></li>
                 </ul>
             </div>
         </footer>
