@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace GestionnaireRageDuCode.Models.ForumViewModels
 {
-    public class Sujet
+    public class SujetViewModel
     {
         public int ID { get; set; }
         public string Titre { get; set; }
